@@ -31,6 +31,7 @@ pages:
     title: Use Cases
 
 menu:
+  TOC: toc.html
   Home: index.html
   Use Cases: usecases.html
   Artifacts: artifacts.html
