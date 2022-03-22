@@ -29,9 +29,16 @@ pages:
     title: Home
   usecases.md:
     title: Use Cases
+  acs.md:
+    title: Acute Coronary Syndrome
+  anti-tnfa.md:
+    title: Anti-TNFa Treatment
 
 menu:
   TOC: toc.html
   Home: index.html
-  Use Cases: usecases.html
+  Use Cases:
+    Acute Coronary Syndrome: acs.html
+    Anti-TNFa Treatment: anti-tnfa.html
+    Others: usecases.html
   Artifacts: artifacts.html

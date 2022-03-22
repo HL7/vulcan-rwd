@@ -1,13 +1,3 @@
-### Study of Acute Coronary Syndromes with Percutaneous Coronary Intervention and optimal antiplatelet therapy
-* Identify Cohort
-* Identify condition under study
-* Identify concomitant medications
-* Retrieve study data points
-### Anti-TNFa Treatment in Patients with Crohn's Disease
-* Identify Cohort
-* Identify condition under study
-* Identify concomitant medications
-* Retrieve study data points
 ### Type 1 or Type 2 Diabetes Treatment Patterns 
 * Identify Cohort
 * Identify condition under study
