@@ -33,6 +33,8 @@ pages:
     title: Finding Data
   usecases.md:
     title: Use Cases
+  mappings.md:
+    title: Sending Data
   downloads.md:
     title: Downloads
 
@@ -41,6 +43,7 @@ menu:
   Home: index.html
   Selecting Patients: patients.html
   Finding Data: healthdata.html
+  Sending Data: mappings.html
   Use Cases: usecases.html
   Artifacts: artifacts.html
   Downloads: downloads.html
