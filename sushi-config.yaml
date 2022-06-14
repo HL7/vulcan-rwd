@@ -27,18 +27,20 @@ dependencies:
 pages:
   index.md:
     title: Home
+  patients.md:
+    title: Selecting Patients
+  healthdata.md:
+    title: Finding Data
   usecases.md:
     title: Use Cases
-  acs.md:
-    title: Acute Coronary Syndrome
-  anti-tnfa.md:
-    title: Anti-TNFa Treatment
+  downloads.md:
+    title: Downloads
 
 menu:
   TOC: toc.html
   Home: index.html
-  Use Cases:
-    Acute Coronary Syndrome: acs.html
-    Anti-TNFa Treatment: anti-tnfa.html
-    Others: usecases.html
+  Selecting Patients: patients.html
+  Finding Data: healthdata.html
+  Use Cases: usecases.html
   Artifacts: artifacts.html
+  Downloads: downloads.html
