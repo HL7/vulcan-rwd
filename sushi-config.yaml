@@ -52,5 +52,6 @@ menu:
   Technical Considerations: technical.html
   Artifacts: artifacts.html
   Downloads: downloads.html
-  Appendix: appendix.html
+  Appendices:
+    Acknowledgements: appendix.html
     Sample Data Elements: acs.html
