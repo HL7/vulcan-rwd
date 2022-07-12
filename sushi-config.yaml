@@ -40,6 +40,8 @@ pages:
     title: Downloads
   appendix.md:
     title: Acknowledgements and Copyrights
+  acs.md:
+    title: Sample Data Elements
 
 menu:
   TOC: toc.html
@@ -51,4 +53,4 @@ menu:
   Artifacts: artifacts.html
   Downloads: downloads.html
   Appendix: appendix.html
-
+    Sample Data Elements: acs.html
