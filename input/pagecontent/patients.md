@@ -140,8 +140,53 @@ The following search parameters defined in the base MedicationStatement are need
 * status
 
 #### MedicationRequest
+To allow searching for prescriptions and optionally planned medication requests, the [MedicationRequest profile](StructureDefinition-MedicationRequestRwd.html) was created that indicates the minimum supported fields needed to determine if a patient has been prescribed or will be prescribed a specific medication.
+
+|**Clinical Element**|**FHIR Element**|
+|---|---|
+|Drug Code|medication|
+|Administration Dates|dosageInstruction.timing.bounds|
+|Order Dates|authoredOn|
+{: .grid }
+
+Along with the above elements, it was also determined that status and intent was an important FHIR element to support.
+The following search parameters defined in the base MedicationRequest are needed:
+
+* code / medication.code
+* authoredOn
+* date
+* intent
+* status
 
 #### MedicationDispense
+To allow searching for dispenses, the [MedicationDispense profile](StructureDefinition-MedicationDispenseRwd.html) was created that indicates the minimum supported fields needed to determine if a patient has been supplied a certain medication.
+
+|**Clinical Element**|**FHIR Element**|
+|---|---|
+|Drug Code|medication|
+|Administration Dates|dosageInstruction.timing.bounds|
+|Supply Dates|whenHandedOver|
+{: .grid }
+
+Along with the above elements, it was also determined that status was an important FHIR element to support.
+The following search parameters defined in the base MedicationDispense are needed:
+
+* code / medication.code
+* whenhandedover
+* status
 
 #### MedicationAdministration
+To allow searching for administrations, the [MedicationAdministration profile](StructureDefinition-MedicationAdministrationRwd.html) was created that indicates the minimum supported fields needed to determine if a patient has taken a certain medication.
 
+|**Clinical Element**|**FHIR Element**|
+|---|---|
+|Drug Code|medication|
+|Administration Dates|effective|
+{: .grid }
+
+Along with the above elements, it was also determined that status was an important FHIR element to support.
+The following search parameters defined in the base MedicationDispense are needed:
+
+* code / medication.code
+* effective-time
+* status

@@ -22,7 +22,7 @@ publisher:
 
 dependencies:
   hl7.fhir.uv.ips: 1.0.0
-  hl7.fhir.us.core: 5.0.0
+  hl7.fhir.us.core: 5.0.1
 
 
 pages:
