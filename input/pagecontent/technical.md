@@ -2,8 +2,6 @@
 
 ### Must Support Element Rules
 
-### Medication Statement
-
 ### Choosing Code System and Value Sets
 
 ### Provenance

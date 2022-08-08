@@ -36,6 +36,8 @@ pages:
     title: Use Cases
   technical.md:
     title: Technical Considerations
+  medications.md:
+    title: Determining usage from Medication Resources
   downloads.md:
     title: Downloads
   appendix.md:
@@ -49,7 +51,9 @@ menu:
   Selecting Patients: patients.html
   Finding Data: healthdata.html
   Use Cases: usecases.html
-  Technical Considerations: technical.html
+  Considerations: 
+    Technical: technical.html
+    Medications: medications.html
   Artifacts: artifacts.html
   Downloads: downloads.html
   Appendices:

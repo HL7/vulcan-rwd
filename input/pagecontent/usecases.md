@@ -1,3 +1,5 @@
+The following use cases were used to determine the requirements for searching for patients along with what data elements were necessary when retrieving clinical data.
+
 ### Type 1 or Type 2 Diabetes Treatment Patterns 
 * Identify Cohort
 * Identify condition under study

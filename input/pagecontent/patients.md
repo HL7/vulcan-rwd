@@ -115,7 +115,7 @@ The following search parameters defined in the base Procedure resource are neede
 This guide defines an [extra search parameter](SearchParameter-ProcedureOutcomeSearchParameter.html) on Procedure to search for Procedure outcomes.
 
 ### Medications
-FHIR provides a set of resources for recording the ordering, dispensing, and administering of medications.  The MedicationAdministration resource is the prime resource for recording actual use of a medication, but that is rarely found outside of hospital settings.  For non-hospital care, the MedicationRequest, the MedicationDispense, and the MedicationStatement resources need to be searched for and have the administration inferred.
+FHIR provides a set of resources for recording the ordering, dispensing, and administering of medications.  The MedicationAdministration resource is the prime resource for recording actual use of a medication, but that is rarely found outside of hospital settings.  For non-hospital care, the MedicationRequest, the MedicationDispense, and the MedicationStatement resources need to be searched for and have the administration inferred.  [Here](medications.html) is more information about the use of the Medication resources to determine usage.
 
 The IPS only provides a profie on the MedicationStatement resource and that is used by this guide along with new profiles on the MedicationRequest, MedicationDispense, and MedicationAdministration resources.
 
