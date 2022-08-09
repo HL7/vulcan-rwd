@@ -1,4 +1,4 @@
-One of the basic needs of research is finding patients that meet a set of criteria.  In many studies, inclusion and exclusion criteria are defined.  This guide does not define how those criteria are represented in FHIR but rather assumes that the criteria is defined and can be turned into questions that can be asked of EHRs to find suitable patients.
+One of the basic needs of research is finding groups of patients that meet a set of criteria, for cohort feasibility determination.  In many studies, inclusion and exclusion criteria are defined.  This guide does not define how those criteria are represented in FHIR but rather assumes that the criteria is defined and can be turned into questions that can be asked of EHRs to find suitable patients.
 
 Through the use cases that were studied, the following data elements were identified that were needed to identify patients.  Note that we are using clinical terminology in identifying the elements as opposed to the FHIR resource names.
 
@@ -26,7 +26,10 @@ Through the use cases that were studied, the following data elements were identi
 	* Administration Dates
 	* Order Dates
 
-From the above data elements, it was determined that the following profiles are needed:
+From the above data elements, it was determined that the profiles listed below are needed.
+
+### Conformance Expectations
+This IG expects that all of the below profiles SHALL be supported by a clinical system that is providing data including the extra search parameters defined to allow proper searching of data to find and identify suitable patients.  NOTE: See the section on Medications for the specifics on the different Medication profiles.
 
 ### Patient
 
@@ -118,6 +121,18 @@ This guide defines an [extra search parameter](SearchParameter-ProcedureOutcomeS
 FHIR provides a set of resources for recording the ordering, dispensing, and administering of medications.  The MedicationAdministration resource is the prime resource for recording actual use of a medication, but that is rarely found outside of hospital settings.  For non-hospital care, the MedicationRequest, the MedicationDispense, and the MedicationStatement resources need to be searched for and have the administration inferred.  [Here](medications.html) is more information about the use of the Medication resources to determine usage.
 
 The IPS only provides a profie on the MedicationStatement resource and that is used by this guide along with new profiles on the MedicationRequest, MedicationDispense, and MedicationAdministration resources.
+
+#### Conformance Expectations
+This IG does not expect every system to support all four of the Medication resources listed below.  We recognize that some systems do not capture dispenses or administrations, for example.  To conform to this guide, a clinical system SHALL support at least one of these Medication resource profiles.  Further, the expectation is that if a system DOES capture medication information, it SHALL expose this data using the profiles below.
+
+|**Clinical Data**|**Required FHIR Profile**|
+|---|---|
+|Prescriptions|[MedicationRequest](StructureDefinition-MedicationRequestRwd.html)|
+|Dispenses|[MedicationDispense](StructureDefinition-MedicationDispenseRwd.html)|
+|Administrations|[MedicationAdministration](StructureDefinition-MedicationAdministrationRwd.html)|
+|Statements|[MedicationStatement](https://hl7.org/fhir/uv/ips/StructureDefinition-MedicationStatement-uv-ips.html)|
+{: .grid }
+
 
 #### MedicationStatement
 The [base IPS MedicationStatement profile](https://hl7.org/fhir/uv/ips/StructureDefinition-MedicationStatement-uv-ips.html) is sufficient for our needs of searching for and retrieving statements made about a patient's use of a medication.

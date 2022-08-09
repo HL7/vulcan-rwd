@@ -29,7 +29,7 @@ pages:
   index.md:
     title: Home
   patients.md:
-    title: Selecting Patients
+    title: Cohort Building
   healthdata.md:
     title: Finding Data
   usecases.md:
@@ -48,7 +48,7 @@ pages:
 menu:
   TOC: toc.html
   Home: index.html
-  Selecting Patients: patients.html
+  Cohort Building: patients.html
   Finding Data: healthdata.html
   Use Cases: usecases.html
   Considerations: 
