@@ -28,7 +28,7 @@ After specific patients have been determined, the next phase is to retrieve thei
 2. Individual EHR Queries
 
 ##### IPS-Capable EHR Systems
-For IPS-Capable EHR systems, a request to retrieve a specific patient's IPS will be made.  The IPS that is returned will be enhanced by using the profiles defined in this guide.  It will in effect be a "Study-Enhanced IPS".  The EHR will receive a request using FHIR APIs with the patient's identifier as a parameter and will return the Study-Enhanced IPS as the payload.  For information on what the Study-Enhanced IPS contains, see [Retrieve Study Enhanced IPS](healthdata.html#ips-request).
+For IPS-Capable EHR systems, a request to retrieve a specific patient's IPS will be made.  The IPS that is returned will be enhanced by using the profiles defined in this guide.  It will in effect be a "Study-Enhanced IPS".  The EHR will receive a request using FHIR APIs with the patient's identifier as a parameter and will return the Study-Enhanced IPS as the payload.  For information on what the Study-Enhanced IPS contains, see [Retrieve Study Enhanced IPS](healthdata.html#extended-ips-request).
 
 ##### Individual EHR Queries
 For EHRs that do not have the ability to package and return IPS documents, a set of standard FHIR queries have been determined.  EHRs will have to support the specific search parameters needed to find healthcare data for a specific patient.  The CTMS or a downstream agent will make all of the queries and will then package all of the returned information into the Study-Enhanced IPS.  For information on the needed queries, see [Individual EHR Queries](healthdata.html#ehr-queries).
