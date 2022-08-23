@@ -43,14 +43,16 @@ pages:
   appendix.md:
     title: Acknowledgements and Copyrights
   acs.md:
-    title: Sample Data Elements
+    title: Acute Coronary Syndrome Study
 
 menu:
   TOC: toc.html
   Home: index.html
   Cohort Building: patients.html
   Finding Data: healthdata.html
-  Use Cases: usecases.html
+  Use Cases:
+    Acute Coronary Syndrome: acs.html
+    Others: usecases.html
   Considerations: 
     Technical: technical.html
     Medications: medications.html

@@ -7,6 +7,10 @@ Through the use cases that were studied, the following data elements were identi
 	* Gender
 	* Death Indicator
 	* Race / Ethnicity (NOTE: These were found in US studies)
+* Visit
+	* Reason for Visit
+	* Admission and Discharge Dates
+	* Discharge Disposition
 * Diagnosis
 	* Diagnosis Code
 	* Date
@@ -51,6 +55,27 @@ The following search parameters defined in the base Patient resource are needed:
 
 #### Race and Ethnicity
 Race and Ethnicity are not part of the base Patient resource nor are they found in the IPS Patient profile as these are not common elements found outside of the United States.  For studies that are US based and have need of searching for or retrieving the race and/or ethnicity of a patient, the US Core extensions for [Race](http://hl7.org/fhir/us/core/StructureDefinition-us-core-race.html) and [Ethnicity](http://hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html) provide the normally collected information and can be added to the Patient instance.
+
+### Encounter
+The FHIR Encounter resource is used for recording hospital visits (and visits in general).  To allow searching for encounters, the [Encounter profile](StructureDefinition-EncounterRwd.html) was created that indicates the minimum supported fields needed to determine if a patient has been hospitalized.
+
+|**Clinical Element**|**FHIR Element**|
+|---|---|
+|Reason for Visit|reasonCode / reasonReference|
+|Admission Date|period.start|
+|Discharge Date|period.end|
+|Discharge Disposition|hospitalization.dischargeDisposition|
+{: .grid }
+
+Along with the above elements, it was also determined that status was an important FHIR element to support.
+
+The following search parameters defined in the base Encounter resource are needed:
+
+* reason-code / reason-reference
+* date
+* status
+
+This guide defines an [extra search parameter](SearchParameter-EncounterDischargeDispositionSearchParameter.html) on Encounter to search for the patient's disposition on discharge.
 
 ### Condition
 The FHIR Condition resource is used for recording diagnoses.  The [base IPS Condition profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Condition-uv-ips.html) is sufficient for our needs of searching for and retrieving patient diagnoses.

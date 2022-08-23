@@ -19,3 +19,15 @@ Usage: #definition
 * base = #Procedure
 * type = #token
 * expression = "Procedure.outcome"
+
+Instance: EncounterDischargeDispositionSearchParameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "DischargeDisposition"
+* status = #active
+* description = "A search parameter to allow searching for Encounters with specific dispositions on discharge."
+* code = #dischargeDisposition
+* base = #Encounter
+* type = #token
+* expression = "Encounter.hospitalization.dischargeDisposition"
+
