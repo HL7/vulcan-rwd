@@ -37,3 +37,9 @@ Description: "A profile on MedicationAdministration that indicates the minimum s
 * subject MS
 * subject only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 * effective[x] MS
+
+Profile: MedicationStatementRwd
+Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips
+Description: "A profile on MedicationStatement that indicates the minimum set of attributes for use in research studies."
+* context MS
+* derivedFrom MS

@@ -1,89 +1,44 @@
-### Study of Acute Coronary Syndromes with Percutaneous Coronary Intervention and optimal antiplatelet therapy
+The following use cases were used to determine the requirements for determining a patient cohort along with what data elements were necessary when retrieving clinical data:
 
-#### Identify Cohort
+### Evaluate the treatment of Acute Coronary Syndrome (ACS) with oral antiplatelets (OAPs)
 
-Identify patients with Acute Coronary Syndrome (ICD 10 -  I21 Acute myocardial infarction; I20-I25  Ischemic heart diseases; I24  Other acute ischemic heart diseases)
+The details of this study can be found on ClinicalTrials.gov: [NCT02190123](https://clinicaltrials.gov/ct2/show/NCT02190123).
 
-* Patient
-	* Identifier
-	*	Birth Date
-	*	Gender
-	*	Death Flag
-* Diagnosis
-	* Diagnosis Code (from ICD-10 or SNOMED CT)
-	* Date
-	* Confirmation Flag
-	* Diagnosis Type (discharge, admitting, chief complaint)
-* Lab Test
-	* Test Code (from LOINC)
-	* Date
-	* Value
-	* Interpretation (high, low, abnormal)
-* ECG/EKG Tests
-	* Test Code (from LOINC)
-	* Date
-	* Value
-	* Interpretation
+This study is a retrospective study that was looking at the effectivencess and persistence fof treatment of Acute Coronary Syndrome with oral antiplatelets.  The study size was 500 patients who had been diagnosed with an episode of Acute Coronary Syndrome and had been treated with oral antiplatelets.
 
+#### Cohort Criteria
+The patients for this study would have the following criteria:
 
-#### Identify condition under study
+* female or male aged 18 years or older
+* have a Encounter record representing a hospitalization with an initial diagnosis of Acute Coronary Syndrome where the patient was discharged alive some time between September 2020 to September 2021 :
+  * ACS is represented for this scenario one of these ICD 10 codes (I21 Acute myocardial infarction; I20-I25  Ischemic heart diseases; I24  Other acute ischemic heart diseases)
+  * the Encounter diagnosis will point to a Condition with one of those codes
+  * the Encounter will have hospitalization information included
+  * the Encounter hospitalization discharge disposition code is not 'exp' (expired)
+* have been given one of ticagrelor, prasugrel or clopidogrel after the date of diagnosis of ACS (as represented by the Condition or Encounter record found above)
 
-Identify those who have percutaneous coronary intervention (ICD-10 PCS 02703ZZ plus p. 2-8 AHRQ defined codes)
+|Drug Name|Brand Name|RxNorm CUI|
+|---|---|---|
+|ticagrelor|brilinta|1116632|
+|prasurgrel|effient|613391|
+|clopidogrel|plavix|32968, 687667, 153658|
+{: .grid }
 
-* Procedure
-	* Procedure Code (from ICD-10, PCS)
-	* Date
-	* Outcome
+These criteria would be represented by the following queries:
 
-##### Of those identify those on ticagrelor, prasugrel or clopidogrel and other antiplatelets
+    /Patient?birthdate=le2002-09-01&gender=male,female
+    /Encounter?reason-code:below=I20,I21,I22,I23,I24,I25&date=ge2020-09-01&date=le2021-09-31&status=finished&dischargeDisposition:not=exp
+    /MedicationAdministration?status=completed&effective-time=ge[Encounter-Start-Date]&
+      code=http://www.nlm.nih.gov/research/umls/rxnorm|1116632,http://www.nlm.nih.gov/research/umls/rxnorm|613391,http://www.nlm.nih.gov/research/umls/rxnorm|32968,http://www.nlm.nih.gov/research/umls/rxnorm|687667,http://www.nlm.nih.gov/research/umls/rxnorm|153658
 
-* Medication
-	* Drug Code (from source???)
-	* Administration Dates
-	* Order Dates
-	* Dosing Information
+The patients that were common to all three queries would then form the set of patients representing this cohort.
 
 
-#### Identify concomitant medications
+#### Retrieved Data
+For patients that meet the criteria above, the following data, as a minimum, would be retrieved:
 
-Collect concomitant medications from the same period (1 month prior to event to 18 months post event)
-
-* Medication
-	* Drug Code (from source???)
-	* Administration Dates
-	* Order Dates
-	* Dosing Information
-	* Reason for admnistration
-
-
-#### Retrieve study data points
-
-Collect age, medical history,
-And from those we could either retrieve:
-Of those, collect any events - death, stroke, myocardial infarction, hospitalization (Major Adverse Cardiovascular Events) and major bleeding events (defined as bleeding requiring 2 units of packed red blood cells)
-
-* Medical History (see IPS for a general answer of what comprises a medical history summary)
-	* Questions asked
-	* Answers to the questions (some will be specific data elements, some will be text answers)
-* Vital Signs
-	* Type Code (from LOINC)
-	* Date
-	* Value
-* Hospitalization
-	* Admit Date
-	* Discharge Date
-	* Hospitalization Reason
-	* Details
-* Transfusion
-	* Product Code (from ICBBAA)
-	* Date
-	* Amount
-* Condition
-	* Condition Code (from ICD-10 or SNOMED CT)
-	* Date Entered
-	* Confirmation Flag
-
-
-#### Example Study
-
-Example study ClinicalTrials.gov Identifier: NCT02190123 (https://clinicaltrials.gov/ct2/show/NCT02190123) others - entire query
+* patient demographics
+* all Medications from the date of initial diagnosis of ACS to 1 year after diagnosis date
+* all Encounters from the date of initial diagnosis of ACS to 1 year after diagnosis date, including the outcomes of the Encounters
+* all Conditions from the date of initial diagnosis of ACS to 1 year after diagnosis date, showing the status of the Conditions
+* other relevant Medical History from the date of initial diagnosis of ACS to 1 year after diagnosis date

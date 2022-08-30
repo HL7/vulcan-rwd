@@ -57,7 +57,6 @@ menu:
     Technical: technical.html
     Medications: medications.html
   Artifacts: artifacts.html
-  Downloads: downloads.html
   Appendices:
     Acknowledgements: appendix.html
-    Sample Data Elements: acs.html
+    Downloads: downloads.html
