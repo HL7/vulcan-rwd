@@ -1,4 +1,4 @@
-The following use cases were used to determine the requirements for determining a patient cohort along with what data elements were necessary when retrieving clinical data:
+The following use case was used to determine the requirements for determining a patient cohort along with what data elements were necessary when retrieving clinical data:
 
 ### Evaluate the treatment of Acute Coronary Syndrome (ACS) with oral antiplatelets (OAPs)
 

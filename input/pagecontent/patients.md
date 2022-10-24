@@ -78,7 +78,7 @@ The following search parameters defined in the base Encounter resource are neede
 This guide defines an [extra search parameter](SearchParameter-EncounterDischargeDispositionSearchParameter.html) on Encounter to search for the patient's disposition on discharge.
 
 ### Condition
-The FHIR Condition resource is used for recording diagnoses.  The [base IPS Condition profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Condition-uv-ips.html) is sufficient for our needs of searching for and retrieving patient diagnoses.
+The FHIR Condition resource is used for recording diagnoses.  The [Condition profile](StructureDefinition-ConditionRwd.html) was created that inherits from the [base IPS Condition profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Condition-uv-ips.html) and adds encounter and recordedDate as elements that should be supported.
 
 |**Clinical Element**|**FHIR Element**|
 |---|---|
@@ -87,8 +87,6 @@ The FHIR Condition resource is used for recording diagnoses.  The [base IPS Cond
 |Confirmation Flag|verificationStatus|
 |Diagnosis Type|category|
 {: .grid }
-
-Along with the above elements, it was also determined that clinicalStatus was an important FHIR element to support.
 
 The following search parameters defined in the base Condition resource are needed:
 
@@ -99,7 +97,7 @@ The following search parameters defined in the base Condition resource are neede
 * category
 
 ### Observation
-The FHIR Observation resource is used for recording test results. The [base IPS Laboratory Observation Results profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-laboratory-uv-ips.html) is mostly sufficient for our needs of searching for and retrieving laboratory results.
+The FHIR Observation resource is used for recording test results. The [Laboratory Observation Results profile](StructureDefinition-ObservationLaboratoryResultsRwd.html) was created that inherits from the [base IPS Laboratory Observation Results profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-laboratory-uv-ips.html) and adds observation components as elements that should be supported.
 
 |**Clinical Element**|**FHIR Element**|
 |---|---|
@@ -108,8 +106,6 @@ The FHIR Observation resource is used for recording test results. The [base IPS 
 |Value|value|
 |Interpretation|interpretation|
 {: .grid }
-
-Along with the above elements, it was also determined that status was an important FHIR element to support.
 
 The following search parameters defined in the base Observation resource are needed:
 
@@ -123,7 +119,7 @@ The following search parameters defined in the base Observation resource are nee
 This guide defines an [extra search parameter](SearchParameter-ObservationInterpretationSearchParameter.html) on Observation to search for Observation interpretations.
 
 ### Procedure
-The FHIR Procedure resource is used for recording procedures.  The [base IPS Procedure profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Procedure-uv-ips.html) is mostly sufficient for our needs of searching for and retrieving procedures.  The [Procedure profile](StructureDefinition-ProcedureRwd.html) defined in this IG adds the Procedure.outcome as a Must Support element.
+The FHIR Procedure resource is used for recording procedures.  The [Procedure profile](StructureDefinition-ProcedureRwd.html) was created that inherits from the [base IPS Procedure profile](https://hl7.org/fhir/uv/ips/StructureDefinition-Procedure-uv-ips.html) and adds the outcome as a data element that should be supported.
 
 |**Clinical Element**|**FHIR Element**|
 |---|---|
@@ -160,7 +156,9 @@ This IG does not expect every system to support all four of the Medication resou
 
 
 #### MedicationStatement
-The [base IPS MedicationStatement profile](https://hl7.org/fhir/uv/ips/StructureDefinition-MedicationStatement-uv-ips.html) is sufficient for our needs of searching for and retrieving statements made about a patient's use of a medication.
+The [MedicationStatement profile](StructureDefinition-MedicationStatementRwd.html) was created that inherits from the [base IPS MedicationStatement profile](https://hl7.org/fhir/uv/ips/StructureDefinition-MedicationStatement-uv-ips.html) and adds context and derivedFrom as elements that should be supported.
+
+The derivedFrom element SHALL be included if the MedicationStatement information was taken from a MedicationRequest, MedicationDispense, or MedicationAdministration instance.  It is not marked as mandatory because there will be instances where a MedicationStatement was directly created and not inferred from another resource instance.
 
 |**Clinical Element**|**FHIR Element**|
 |---|---|
