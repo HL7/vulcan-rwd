@@ -40,8 +40,10 @@ pages:
     title: Determining usage from Medication Resources
   downloads.md:
     title: Downloads
-  appendix.md:
-    title: Acknowledgements and Copyrights
+  acknowledgements.md:
+    title: Acknowledgements
+  references.md:
+    title: Related References
   acs.md:
     title: Acute Coronary Syndrome Study
   anti-tnfa.md:
@@ -61,5 +63,6 @@ menu:
     Medications: medications.html
   Artifacts: artifacts.html
   Appendices:
-    Acknowledgements: appendix.html
+    Acknowledgements: acknowledgements.html
+    References: references.html
     Downloads: downloads.html
