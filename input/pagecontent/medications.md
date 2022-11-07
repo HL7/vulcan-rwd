@@ -12,7 +12,7 @@ FHIR has multiple core resources for exchanging Medication information.  The [ma
 
 {::options parse_block_html="false" /}
 <figure>
-  <img style="padding-top:0;padding-bottom:0px" width="1000px" src="medication_info.png" alt="Diagram showing different medication resources"/>
+  <img style="padding-top:0;padding-bottom:0px" width="1000px" src="medication_reliability.png" alt="Diagram showing different medication resources"/>
   <figcaption>Figure 1 - Medication Resource Information</figcaption>
 </figure>
 {::options parse_block_html="true" /}
