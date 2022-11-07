@@ -8,9 +8,7 @@ Many sources of RWD exist, but for the current phase of work, the scope of this 
 
 We are very aware that the use of EHRs as a mode of direct data collections for traditional prospective clinical trials (sometimes called “electronic source data” or “eSource” activities) is also of great interest. While this is not currently in scope of this implementation guide, we consider it highly likely that types of solutions developed for eSource and for RWD will have significant overlap
 
-This guide is dependent on the International Patient Summary (IPS) project for a baseline dataset from which to build its profiles. The profiles built will enhance the IPS profiles for the purposes of conveying data needed for clinical research.
-
-This guide defines the FHIR building blocks to meet use cases which will eventually mature the minimal set of common resources and elements.  It is being developed using an iterative use case approach, identifying the minimal set of EHR-based information needed to answer a small set of research questions and creating a set of FHIR profiles for representing this needed information in an EHR, then repeating the process with a new question.  As more use cases are considered, more common resources and elements will be added to the guide.  It provides an opportunity to help establish future US Core, Australia Core, Japan Core, etc. as they wish to scale their guides and profiles.  The mappings to achieve different outcomes are dependent on other projects (eg. FHIR to CDISC, FHIR to OMOP, etc.).
+This guide is dependent on the International Patient Summary (IPS) project for a baseline dataset from which to build its profiles. The profiles built will enhance the IPS profiles for the purposes of conveying data needed for clinical research.  IPS was chosen over a regional guide like US Core because it is a more generalized representation of data and has less constraints than regional guides.  To that end, a guide that bases itself on IPS will be more highly interoperable but can be further constrained to be in line with a regional guide like US Core, Australia Core, or Canadian Core.
 
 {::options parse_block_html="false" /}
 <figure>
@@ -20,6 +18,8 @@ This guide defines the FHIR building blocks to meet use cases which will eventua
 {::options parse_block_html="true" /}
 
 [This page](references.html) has more information on the relationship between this guide and other foundational guides.
+
+This guide defines the FHIR building blocks to meet use cases which will eventually mature the minimal set of common resources and elements.  It is being developed using an iterative use case approach, identifying the minimal set of EHR-based information needed to answer a small set of research questions and creating a set of FHIR profiles for representing this needed information in an EHR, then repeating the process with a new question.  As more use cases are considered, more common resources and elements will be added to the guide.  It provides an opportunity to help establish future US Core, Australia Core, Japan Core, etc. as they wish to scale their guides and profiles.  The mappings to achieve different outcomes are dependent on other projects (eg. FHIR to CDISC, FHIR to OMOP, etc.).
 
 ### Approach
 The Vulcan Real World Data project determined that there are two phases to requesting data from an EHR:

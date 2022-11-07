@@ -1,6 +1,6 @@
 ### Representing Absent and Not Known Data
 
-When a source system supports the extended IPS request, there will be a need to indicate that, for the required sections in the returned document, that an explicit assertion of whether data is known to be absent or not is made.  The following sections are indicated as required and therefore must follow this rule:
+When a source system supports the extended IPS request, the returned FHIR document will have sections that are required to be returned.  When those sections do not contain any data, there is some ambiguity as to whether there is no data because the patient does not have any instances of the data that is contained in that section, i.e. allergies or medications, or there is no data because the patient has not been explicitly asked.  Thus there is a need to indicate an explicit assertion of whether data is known to be absent or not is made.  The following sections are indicated as required and therefore must follow this rule:
 
 * Medication Summary
 * Problem List
