@@ -12,6 +12,15 @@ This guide is dependent on the International Patient Summary (IPS) project for a
 
 This guide defines the FHIR building blocks to meet use cases which will eventually mature the minimal set of common resources and elements.  It is being developed using an iterative use case approach, identifying the minimal set of EHR-based information needed to answer a small set of research questions and creating a set of FHIR profiles for representing this needed information in an EHR, then repeating the process with a new question.  As more use cases are considered, more common resources and elements will be added to the guide.  It provides an opportunity to help establish future US Core, Australia Core, Japan Core, etc. as they wish to scale their guides and profiles.  The mappings to achieve different outcomes are dependent on other projects (eg. FHIR to CDISC, FHIR to OMOP, etc.).
 
+{::options parse_block_html="false" /}
+<figure>
+  <img style="padding-top:0;padding-bottom:0px" width="1000px" src="rwd_conceptual_application.png" alt="Diagram showing relationship between IPS, this guide, and other specific guides"/>
+  <figcaption>Figure 1 - Real World Data Conceptual Application</figcaption>
+</figure>
+{::options parse_block_html="true" /}
+
+[This page](references.html) has more information on the relationship between this guide and other foundational guides.
+
 ### Approach
 The Vulcan Real World Data project determined that there are two phases to requesting data from an EHR:
 
