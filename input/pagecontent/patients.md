@@ -32,6 +32,14 @@ Through the use cases that were studied, the following data elements were identi
 
 From the above data elements, it was determined that the profiles listed below are needed.
 
+{::options parse_block_html="false" /}
+<figure>
+  <img style="padding-top:0;padding-bottom:0px" src="cohort_criterion_fhir_resources.png" alt="Diagram showing the cohort criterion mapped to FHIR resources"/>
+  <figcaption>Figure 2 - Cohort Criterion FHIR Resources</figcaption>
+</figure>
+{::options parse_block_html="true" /}
+
+
 ### Conformance Expectations
 This IG expects that all of the below profiles SHALL be supported by a clinical system that is providing data including the extra search parameters defined to allow proper searching of data to find and identify suitable patients.  NOTE: See the section on Medications for the specifics on the different Medication profiles.
 

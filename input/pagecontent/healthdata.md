@@ -10,6 +10,14 @@ For source systems that support the extended IPS request, they SHALL support the
 
 There is an optional parameter to the operation which is the number of months to consider history.  This history period is found in most of the sections below.
 
+{::options parse_block_html="false" /}
+<figure>
+  <img style="padding-top:0;padding-bottom:0px" src="rwd_composition.png" alt="Diagram showing the composition of a Real World Data document"/>
+  <figcaption>Figure 3 - Real World Data Document Composition</figcaption>
+</figure>
+{::options parse_block_html="true" /}
+
+
 #### Extended IPS Request Sections
 ##### Medication Summary
 The medication summary section contains a description of the patient’s medications.  The content will contain all of the currently active medications plus any medications that have been administered in the given history period.

@@ -12,7 +12,7 @@ This guide is dependent on the International Patient Summary (IPS) project for a
 
 {::options parse_block_html="false" /}
 <figure>
-  <img style="padding-top:0;padding-bottom:0px" width="1000px" src="rwd_conceptual_application.png" alt="Diagram showing relationship between IPS, this guide, and other specific guides"/>
+  <img style="padding-top:0;padding-bottom:0px" src="rwd_conceptual_application.png" alt="Diagram showing relationship between IPS, this guide, and other specific guides"/>
   <figcaption>Figure 1 - Real World Data Conceptual Application</figcaption>
 </figure>
 {::options parse_block_html="true" /}
