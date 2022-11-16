@@ -43,3 +43,9 @@ Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ip
 Description: "A profile on MedicationStatement that indicates the minimum set of attributes for use in research studies."
 * context MS
 * derivedFrom MS
+* derivedFrom ^slicing.discriminator.type = #type
+* derivedFrom ^slicing.discriminator.path = "$this"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom ^slicing.description = "Slice based on the types."
+* derivedFrom contains MedicationSource 1..*
+* derivedFrom[MedicationSource] only Reference(MedicationRequestRwd or MedicationDispenseRwd or MedicationAdministrationRwd)

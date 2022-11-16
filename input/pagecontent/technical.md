@@ -40,3 +40,19 @@ If an implementer creating content does not have data to be included for require
 	* use an appropriate exception code from the value set, if available
 	* use a code from the Data Absent Reason code system
 3. For coded data elements with required bindings, use the appropriate exception code from the value set
+
+### Cross-Version Analysis
+{% include cross-version-analysis.xhtml %}
+
+### Intellectual Property Statements
+{% include ip-statements.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### IG Dependencies
+
+This IG Contains the following dependencies on other IGs.
+
+{% include dependency-table.xhtml %}
