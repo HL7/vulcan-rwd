@@ -7,6 +7,7 @@
 # Inherited mapping from MedicationDispense
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
-# IPS bindings are not correct
-None of the codings provided are in the value set 'Allergy intolerance substance condition - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/vulcan-rwd/StructureDefinition/ProcedureRwd
+# IPS recommended binding
+None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#1116632)
+None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#613391)
+None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#32968)
