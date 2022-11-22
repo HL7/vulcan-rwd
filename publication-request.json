@@ -4,6 +4,7 @@
   "path" : "http://hl7.org/fhir/uv/vulcan-rwd/Jan2023",
   "status" : "ballot",
   "sequence" : "STU1",
+  "milestone" : false,
   "desc" : "This is the ballot version of the first release in the STU1 sequence.",
   "title" : "Retrieval of Real World Data for Clinical Research",
   "category" : "Research",

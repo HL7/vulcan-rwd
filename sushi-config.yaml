@@ -9,7 +9,7 @@ name: RealWorldData
 title: Retrieval of Real World Data for Clinical Research
 description: A FHIR Implementation Guide that provides profiles and use cases that show how real world data can be exposed in such a way that it can be used for research purposes.
 status: draft # draft | active | retired | unknown
-version: 1.0.0
+version: 1.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
