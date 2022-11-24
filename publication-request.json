@@ -5,7 +5,7 @@
   "status" : "ballot",
   "sequence" : "STU1",
   "milestone" : false,
-  "ci-build": "http://build.fhir.org/ig/HL7/vulcan-rwd/",
+  "ci-build": "http://build.fhir.org/ig/HL7/vulcan-rwd",
   "desc" : "This is the ballot version of the first release in the STU1 sequence.",
   "title" : "Retrieval of Real World Data for Clinical Research",
   "category" : "Research",
