@@ -4,10 +4,10 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Inherited mapping from MedicationDispense
+# MedicationDispense in FHIR Core has a mapping that includes text that looks like HTML
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
-# IPS recommended binding
+# The IPS binding to SNOMED is a preferred binding and our examples use RxNorm and NDC.
 None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#1116632)
 None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#613391)
 None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#32968)
