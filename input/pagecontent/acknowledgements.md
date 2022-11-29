@@ -13,7 +13,9 @@ Core work group members:
 
 * **Jean Duteau**  - Duteau Design
 * **Rebecca Baker** - CDISC
+* **Catherine Craven** - University of Texas Health Science Center San Antonio
 * **Mike Hamidi** - Pfizer
+* **Sergey Krikov** - Parexel
 * **Hugh Glover** - Bluewave Informatics/HL7 BR&R
 
 Project Management:
