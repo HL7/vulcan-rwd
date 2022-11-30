@@ -18,6 +18,22 @@ Core work group members:
 * **Sergey Krikov** - Parexel
 * **Hugh Glover** - Bluewave Informatics/HL7 BR&R
 
+Connectathon Contributors:
+
+* **Peter Butterfill** - Parexel
+* **Qi Li** - Intersystems
+* **Ron Sweeney** - Intersystems
+* **Regilo Souza** - Intersystems
+* **Dan Newingham** - Bioveras
+* **Tasha Nagamine** - Droice Labs
+* **Ashani Bhattacharya** - Droice Labs
+* **Harshit Saxena** - Droice Labs
+
+Contribution from the Schedule of Activities work group was greatly appreciated and we recognize that work groups's co-chairs:
+
+* **Geoff Low** - Medidata/3DS
+* **Michael J Ward** - TransCelerate Biopharma / Eli Lilly & Company
+
 Project Management:
 
 * **Shani Sampson** Vulcan
