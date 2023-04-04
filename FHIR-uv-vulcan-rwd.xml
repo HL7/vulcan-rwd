@@ -7,6 +7,11 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="ValueSet/ExampleClopidogrelCodes" key="ValueSet-ExampleClopidogrelCodes" name="ACS Example Clopidogrel Codes"/>
+<artifact id="ValueSet/ExampleACSConditionCodes" key="ValueSet-ExampleACSConditionCodes" name="ACS Example Condition Codes"/>
+<artifact id="ValueSet/ExampleACSOralAntiplatelets" key="ValueSet-ExampleACSOralAntiplatelets" name="ACS Example Oral Antiplatelet Drug Codes"/>
+<artifact id="ValueSet/ExamplePrasugrelCodes" key="ValueSet-ExamplePrasugrelCodes" name="ACS Example Prasugrel Codes"/>
+<artifact id="ValueSet/ExampleTicagrelorCodes" key="ValueSet-ExampleTicagrelorCodes" name="ACS Example Ticagrelor Codes"/>
 <artifact id="StructureDefinition/ConditionRwd" key="StructureDefinition-ConditionRwd" name="ConditionRwd"/>
 <artifact id="SearchParameter/EncounterDischargeDispositionSearchParameter" key="SearchParameter-EncounterDischargeDispositionSearchParameter" name="EncounterDischargeDispositionSearchParameter"/>
 <artifact id="StructureDefinition/EncounterRwd" key="StructureDefinition-EncounterRwd" name="EncounterRwd"/>

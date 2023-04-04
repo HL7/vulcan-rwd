@@ -39,6 +39,15 @@ From the above data elements, it was determined that the profiles listed below a
 </figure>
 {::options parse_block_html="true" /}
 
+### Cohort Building Searches
+
+The sections below detail how a set of patients can be found that match specific search criteria using normal FHIR searching.  Depending on patient consent and data access agreements, these FHIR searches may not be possible.  The following searches, which include the current method, are different levels that could be used to determine either a cohort or whether an EHR has information that should be accessed to find a cohort:
+
+* query for number of patients that match the search criteria
+* query for a list of patient IDs that match the search criteria
+* retrieve patient resources that match the search criteria (i.e. normal FHIR searching)
+
+EHRs could use the FHIR MeasureReport resource to return the results of any of those three searches.  Details will be found in future versions of this guide.
 
 ### Conformance Expectations
 This IG expects that all of the below profiles SHALL be supported by a clinical system that is providing data including the extra search parameters defined to allow proper searching of data to find and identify suitable patients.  NOTE: See the section on Medications for the specifics on the different Medication profiles.

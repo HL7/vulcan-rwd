@@ -195,7 +195,6 @@ Instance: RWDLabResult
 InstanceOf: ObservationLaboratoryResultsRwd
 Description: "A sample lab results for the real world data patient."
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code = http://loinc.org#26515-7
 * subject = Reference(RWDPatient)
 * performer = Reference(RWDLaboratory)

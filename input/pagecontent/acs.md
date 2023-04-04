@@ -11,25 +11,19 @@ The patients for this study would have the following criteria:
 
 * female or male aged 18 years or older
 * have a Encounter record representing a hospitalization with an initial diagnosis of Acute Coronary Syndrome where the patient was discharged alive some time between September 2020 to September 2021 :
-  * ACS is represented for this scenario one of these ICD 10 codes (I21 Acute myocardial infarction; I20-I25  Ischemic heart diseases; I24  Other acute ischemic heart diseases)
+  * ACS is represented for this scenario one of the ICD-10 codes found in the [ACS value set](ValueSet-ExampleACSConditionCodes.html)
   * the Encounter diagnosis will point to a Condition with one of those codes
   * the Encounter will have hospitalization information included
   * the Encounter hospitalization discharge disposition code is not 'exp' (expired)
-* have been given one of ticagrelor, prasugrel or clopidogrel after the date of diagnosis of ACS (as represented by the Condition or Encounter record found above)
+* have been given one of the codes in the value sets for [ticagrelor](ValueSet-ExampleTicagrelorCodes.html), [prasugrel](ValueSet-ExamplePrasugrelCodes.html) or [clopidogrel](ValueSet-ExampleClopidogrelCodes.html) after the date of diagnosis of ACS (as represented by the Condition or Encounter record found above)
 
-|Drug Name|Brand Name|RxNorm CUI|
-|---|---|---|
-|ticagrelor|brilinta|1116632|
-|prasurgrel|effient|613391|
-|clopidogrel|plavix|32968, 687667, 153658|
-{: .grid }
 
 These criteria would be represented by the following queries:
 
     /Patient?birthdate=le2002-09-01&gender=male,female
-    /Encounter?reason-code:below=I20,I21,I22,I23,I24,I25&date=ge2020-09-01&date=le2021-09-31&status=finished&dischargeDisposition:not=exp
+    /Encounter?reason-code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleACSConditionCodes&date=ge2020-09-01&date=le2021-09-31&status=finished&dischargeDisposition:not=exp
     /MedicationAdministration?status=completed&effective-time=ge[Encounter-Start-Date]&
-      code=http://www.nlm.nih.gov/research/umls/rxnorm|1116632,http://www.nlm.nih.gov/research/umls/rxnorm|613391,http://www.nlm.nih.gov/research/umls/rxnorm|32968,http://www.nlm.nih.gov/research/umls/rxnorm|687667,http://www.nlm.nih.gov/research/umls/rxnorm|153658
+      code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleACSOralAntiplatelets
 
 The patients that were common to all three queries would then form the set of patients representing this cohort.
 
