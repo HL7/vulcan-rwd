@@ -4,7 +4,7 @@ The following use case was used to determine the requirements for determining a 
 
 The details of this study can be found on ClinicalTrials.gov: [NCT02190123](https://clinicaltrials.gov/ct2/show/NCT02190123).
 
-This study is a retrospective study that was looking at the effectivencess and persistence fof treatment of Acute Coronary Syndrome with oral antiplatelets.  The study size was 500 patients who had been diagnosed with an episode of Acute Coronary Syndrome and had been treated with oral antiplatelets.
+This study is a retrospective study that was looking at the effectiveness and persistence of treatment of Acute Coronary Syndrome with oral antiplatelets.  The study size was 500 patients who had been diagnosed with an episode of Acute Coronary Syndrome and had been treated with oral antiplatelets.
 
 #### Cohort Criteria
 The patients for this study would have the following criteria:

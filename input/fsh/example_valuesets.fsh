@@ -1,6 +1,7 @@
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $RxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $NDC = http://hl7.org/fhir/sid/ndc
+Alias: $EMEAPRODS = http://example.org/emeaproducts
 
 ValueSet: ExampleACSConditionCodes
 Title: "ACS Example Condition Codes"
@@ -877,3 +878,50 @@ Description: "An example value set of codes for Ticagrelor for the Acute Coronar
 * $NDC#551549618
 * $NDC#63629529201
 
+ValueSet: ExampleAntiTNFAConditionCodes
+Title: "AntiTNFA Example Condition Codes"
+Description: "An example value set of ICD-10 codes for the Anti-TNFA use case for Crohn's Disease."
+* ^experimental = true
+* $ICD10CM#K50.0
+* $ICD10CM#K50.00
+* $ICD10CM#K50.01
+* $ICD10CM#K50.011
+* $ICD10CM#K50.012
+* $ICD10CM#K50.013
+* $ICD10CM#K50.014
+* $ICD10CM#K50.018
+* $ICD10CM#K50.019
+* $ICD10CM#K50.1
+* $ICD10CM#K50.10
+* $ICD10CM#K50.11
+* $ICD10CM#K50.111
+* $ICD10CM#K50.112
+* $ICD10CM#K50.113
+* $ICD10CM#K50.114
+* $ICD10CM#K50.118
+* $ICD10CM#K50.119
+* $ICD10CM#K50.8
+* $ICD10CM#K50.80
+* $ICD10CM#K50.81
+* $ICD10CM#K50.811
+* $ICD10CM#K50.812
+* $ICD10CM#K50.813
+* $ICD10CM#K50.814
+* $ICD10CM#K50.818
+* $ICD10CM#K50.819
+* $ICD10CM#K50.9
+* $ICD10CM#K50.90
+* $ICD10CM#K50.91
+* $ICD10CM#K50.911
+* $ICD10CM#K50.912
+* $ICD10CM#K50.913
+* $ICD10CM#K50.914
+* $ICD10CM#K50.918
+* $ICD10CM#K50.919
+
+ValueSet: ExampleAntiTNFADrugCodes
+Title: "AntiTNFA Example Drug Codes"
+Description: "An example value set of EMEA product codes for Hyrimoz and Zessly drug products."
+* ^experimental = true
+* $EMEAPRODS#EMEA/H/C/004647
+* $EMEAPRODS#EMEA/H/C/004320
