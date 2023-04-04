@@ -1,4 +1,4 @@
-FHIR has multiple core resources for exchanging Medication information.  The [main use cases](http://hl7.org/fhir/medications-module.html#intro) of the Medication resources concern the workflow of ordering, dispensing, and administering.  This results in a set of resources that have to be queried as a whole if trying to determine what medications an individual patient is currently taking.
+FHIR has multiple core resources for exchanging Medication information.  The [main use cases]({{site.data.fhir.path}}medications-module.html#intro) of the Medication resources concern the workflow of ordering, dispensing, and administering.  This results in a set of resources that have to be queried as a whole if trying to determine what medications an individual patient is currently taking.
 
 #### Workflow Resources
 

@@ -1,13 +1,10 @@
 {
   "package-id" : "hl7.fhir.uv.vulcan-rwd",
-  "version" : "1.0.0-ballot",
-  "path" : "http://hl7.org/fhir/uv/vulcan-rwd/2023Jan",
-  "status" : "ballot",
+  "version" : "1.0.0",
+  "path" : "http://hl7.org/fhir/uv/vulcan-rwd",
+  "status" : "trial-use",
   "sequence" : "STU1",
-  "milestone" : false,
-  "ci-build": "http://build.fhir.org/ig/HL7/vulcan-rwd",
-  "desc" : "This is the ballot version of the first release in the STU1 sequence.",
-  "title" : "Retrieval of Real World Data for Clinical Research",
-  "category" : "Research",
-  "introduction" : "This FHIR Implementation Guide defines FHIR profiles that can be used to retrieve relevant research data from Real World Data sources – specifically Electronic Health Record (EHR) systems - and ultimately transform that data into a format suitable for submission to pharmaceutical regulatory agencies.  The profiles were based on the International Patient Summary (IPS) project. They enhance the IPS profiles for the purposes of conveying data needed for supporting clinical trials.  The destination format currently used by this guide is the SDTM (Study Data Tabulation Model) standard, created by the Clinical Data Interchange Standards Consortium (CDISC) standards development organization, which is optimized for clinical research and regulatory uses and is the data standard used for regulatory submissions of study data to the US Food and Drug Administration.  The intent is for future iterations of the Implementation Guide to have a wider scope of RWD such as from Registries, Payer systems, and HIEs. The primary purpose for EHR data, collected for a purpose other than use in a clinical trial, is in support of clinical care of patients and knowledge for their healthcare providers.  However, large amounts of such information could potentially be used for the secondary purpose of supporting clinical trials to analyze the data and generate supporting evidence for, as an example, a new indicated use for an already approved pharmaceutical drug or safety-related analyses.  This guide intends to demonstrate how HL7 FHIR can directly support clinical trials."
+  "milestone" : true,
+  "mode": "milestone",
+  "desc": "This is the published versino of the first release of the STU1 version of the guide."
 }
