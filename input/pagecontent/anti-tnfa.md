@@ -23,11 +23,11 @@ These criteria would be represented by the following queries:
 
 The patients would also not have the following criteria:
 
-* HbA1C measurement < 8.5g/dL
+* Hemoglobin measurement < 8.5g/dL
 
 This exclusion criteria would be represented by the following query:
 
-    /Observation?status=final&code=http://loinc.org#41995-2&value-quantity=le8.5|http://unitsofmeasure.org|g%2FdL
+    /Observation?status=final&code=http://loinc.org#718-7&value-quantity=le8.5|http://unitsofmeasure.org|g%2FdL
 
 
 The patients that were common to the first four queries and were not found in the exclusion query would form the set of patients representing this cohort.

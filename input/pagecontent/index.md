@@ -8,7 +8,7 @@ Many sources of RWD exist, but for the current phase of work, the scope of this 
 
 We are very aware that the use of EHRs as a mode of direct data collections for traditional prospective clinical trials (sometimes called “electronic source data” or “eSource” activities) is also of great interest. While this is not currently in scope of this implementation guide, we consider it highly likely that types of solutions developed for eSource and for RWD will have significant overlap.
 
-This guide is dependent on the International Patient Summary (IPS) project for a baseline dataset from which to build its profiles. The profiles built will enhance the IPS profiles for the purposes of conveying data needed for clinical research.  IPS was chosen over a regional guide like US Core because it is a more generalized representation of data and has less constraints than regional guides.  To that end, a guide that bases itself on IPS will be more highly interoperable but can be further constrained to be in line with a regional guide like US Core, Australia Core, or Canadian Core.
+This guide is dependent on the International Patient Access (IPA) project for a baseline dataset from which to build its profiles. IPA provides a mechanism for application to access patient information and provides a base set of profiles that are in line with the requirements of the RWD guide.  The profiles built will detail the data elements that are needed for conveying data needed for clinical research.  IPA was chosen over a regional guide like US Core because it is a more generalized representation of data and has less constraints than regional guides.  To that end, a guide that bases itself on IPA will be more highly interoperable but can be further constrained to be in line with a regional guide like US Core, Australia Core, or Canadian Core.
 
 {::options parse_block_html="false" /}
 <figure>
@@ -57,16 +57,9 @@ The Vulcan Real World Data project determined that there are two phases to reque
 The first phase is building a cohort by querying for patients based on a set of inclusion and exclusion critieria.  Although these criteria may be represented as FHIR objects, this guide does not include a process from converting the criteria expressed as FHIR instances into queries against an EHR.  Instead it presumes that the needed healthcare data is known by the requesting software in some manner.  In this phase, a number of queries are made against an EHR to narrow down the set of patients to those who meet the research study criteria.  A set of patient identifiers is retrieved and becomes input into the next phase of requesting data.  NOTE: This phase may not be necessary if the set of patients is already known for a study.  If the proper patient identifiers are known, it is possible to skip this phase and go directly to retrieving healthcare data for the known patients.  For more information about this phase, see [Cohort Building Phase](patients.html).
 
 #### Retrieve Healthcare Data
-After specific patients have been determined, the next phase is to retrieve their healthcare data.  This guide inherits from the International Patient Summary and uses the IPS as the means to transfer healthcare data.  There are two means to retrieve the summary:
+After specific patients have been determined, the next phase is to retrieve their healthcare data.  This guide inherits from the International Patient Access and uses the IPA as the means to transfer healthcare data.
 
-1. IPS-capable EHR systems
-2. Individual EHR Queries
-
-##### IPS-Capable EHR Systems
-For IPS-Capable EHR systems, a request to retrieve a specific patient's IPS will be made.  The IPS that is returned will be enhanced by using the profiles defined in this guide.  It will in effect be a "Study-Enhanced IPS".  The EHR will receive a request using FHIR APIs with the patient's identifier as a parameter and will return the Study-Enhanced IPS as the payload.  For information on what the Study-Enhanced IPS contains, see [Retrieve Study Enhanced IPS](healthdata.html#extended-ips-request).
-
-##### Individual EHR Queries
-For EHRs that do not have the ability to package and return IPS documents, a set of standard FHIR queries have been determined.  EHRs will have to support the specific search parameters needed to find healthcare data for a specific patient.  The CTMS or a downstream agent will make all of the queries and will then package all of the returned information into the Study-Enhanced IPS.  For information on the needed queries, see [Individual EHR Queries](healthdata.html#ehr-queries).
+The sections in the IPA around [Gaining Access to a Patient Record](http://hl7.org/fhir/uv/ipa/access.html) and [Finding and Retrieving Patient Information](http://hl7.org/fhir/uv/ipa/fetching.html) detail how healthcare data can be retrieved.  This guide lists specific search parameters needed to find healthcare data for a specific patient and it lists the specific resources and data elements that have been deemed important to return for the purposes of research.  The CTMS or a downstream agent will make all of the queries and will then package all of the returned information into the Study-Enhanced IPS.  For information on the needed queries, see [Individual EHR Queries](healthdata.html#ehr-queries).
 
 ### Technical Considerations
 To properly implement this guide, there are a set of technical considerations besides the specific queries and profiles defined.  See [Technical Considerations](technical.html) for more details.
