@@ -14,6 +14,7 @@
 <artifact id="ValueSet/ExampleTicagrelorCodes" key="ValueSet-ExampleTicagrelorCodes" name="ACS Example Ticagrelor Codes"/>
 <artifact id="ValueSet/ExampleAntiTNFAConditionCodes" key="ValueSet-ExampleAntiTNFAConditionCodes" name="AntiTNFA Example Condition Codes"/>
 <artifact id="ValueSet/ExampleAntiTNFADrugCodes" key="ValueSet-ExampleAntiTNFADrugCodes" name="AntiTNFA Example Drug Codes"/>
+<artifact id="CapabilityStatement/CapabilityStatement-RWDServer" key="CapabilityStatement-CapabilityStatement-RWDServer" name="CapabilityStatement-RWDServer"/>
 <artifact deprecated="true" id="StructureDefinition/ConditionRwd" key="StructureDefinition-ConditionRwd" name="ConditionRwd"/>
 <artifact id="SearchParameter/EncounterDischargeDispositionSearchParameter" key="SearchParameter-EncounterDischargeDispositionSearchParameter" name="EncounterDischargeDispositionSearchParameter"/>
 <artifact id="StructureDefinition/EncounterRwd" key="StructureDefinition-EncounterRwd" name="EncounterRwd"/>
