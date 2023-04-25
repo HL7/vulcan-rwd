@@ -14,21 +14,21 @@
 <artifact id="ValueSet/ExampleTicagrelorCodes" key="ValueSet-ExampleTicagrelorCodes" name="ACS Example Ticagrelor Codes"/>
 <artifact id="ValueSet/ExampleAntiTNFAConditionCodes" key="ValueSet-ExampleAntiTNFAConditionCodes" name="AntiTNFA Example Condition Codes"/>
 <artifact id="ValueSet/ExampleAntiTNFADrugCodes" key="ValueSet-ExampleAntiTNFADrugCodes" name="AntiTNFA Example Drug Codes"/>
-<artifact id="StructureDefinition/ConditionRwd" key="StructureDefinition-ConditionRwd" name="ConditionRwd"/>
+<artifact deprecated="true" id="StructureDefinition/ConditionRwd" key="StructureDefinition-ConditionRwd" name="ConditionRwd"/>
 <artifact id="SearchParameter/EncounterDischargeDispositionSearchParameter" key="SearchParameter-EncounterDischargeDispositionSearchParameter" name="EncounterDischargeDispositionSearchParameter"/>
 <artifact id="StructureDefinition/EncounterRwd" key="StructureDefinition-EncounterRwd" name="EncounterRwd"/>
 <artifact id="StructureDefinition/MedicationAdministrationRwd" key="StructureDefinition-MedicationAdministrationRwd" name="MedicationAdministrationRwd"/>
 <artifact id="StructureDefinition/MedicationDispenseRwd" key="StructureDefinition-MedicationDispenseRwd" name="MedicationDispenseRwd"/>
-<artifact id="StructureDefinition/MedicationRequestRwd" key="StructureDefinition-MedicationRequestRwd" name="MedicationRequestRwd"/>
+<artifact deprecated="true" id="StructureDefinition/MedicationRequestRwd" key="StructureDefinition-MedicationRequestRwd" name="MedicationRequestRwd"/>
 <artifact id="StructureDefinition/MedicationStatementRwd" key="StructureDefinition-MedicationStatementRwd" name="MedicationStatementRwd"/>
 <artifact id="SearchParameter/ObservationInterpretationSearchParameter" key="SearchParameter-ObservationInterpretationSearchParameter" name="ObservationInterpretationSearchParameter"/>
 <artifact id="StructureDefinition/ObservationLaboratoryResultsRwd" key="StructureDefinition-ObservationLaboratoryResultsRwd" name="ObservationLaboratoryResultsRwd"/>
 <artifact id="SearchParameter/ProcedureOutcomeSearchParameter" key="SearchParameter-ProcedureOutcomeSearchParameter" name="ProcedureOutcomeSearchParameter"/>
 <artifact id="StructureDefinition/ProcedureRwd" key="StructureDefinition-ProcedureRwd" name="ProcedureRwd"/>
-<artifact id="AllergyIntolerance/RWDAllergyIntolerance" key="AllergyIntolerance-RWDAllergyIntolerance" name="RWDAllergyIntolerance"/>
-<artifact id="Device/RWDAuthor" key="Device-RWDAuthor" name="RWDAuthor"/>
-<artifact id="Bundle/RWDBundle" key="Bundle-RWDBundle" name="RWDBundle"/>
-<artifact id="Composition/RWDComposition" key="Composition-RWDComposition" name="RWDComposition"/>
+<artifact deprecated="true" id="AllergyIntolerance/RWDAllergyIntolerance" key="AllergyIntolerance-RWDAllergyIntolerance" name="RWDAllergyIntolerance"/>
+<artifact deprecated="true" id="Device/RWDAuthor" key="Device-RWDAuthor" name="RWDAuthor"/>
+<artifact deprecated="true" id="Bundle/RWDBundle" key="Bundle-RWDBundle" name="RWDBundle"/>
+<artifact deprecated="true" id="Composition/RWDComposition" key="Composition-RWDComposition" name="RWDComposition"/>
 <artifact id="Encounter/RWDEncounter" key="Encounter-RWDEncounter" name="RWDEncounter"/>
 <artifact id="Observation/RWDLabResult" key="Observation-RWDLabResult" name="RWDLabResult"/>
 <artifact id="Organization/RWDLaboratory" key="Organization-RWDLaboratory" name="RWDLaboratory"/>

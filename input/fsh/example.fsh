@@ -1,3 +1,14 @@
+Instance: RWDPatient
+InstanceOf: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
+Description: "A sample patient"
+* identifier.system = "http://example.org/patient-identifiers"
+* identifier.value = "1233567"
+* active = true
+* name.family = "Patient"
+* name.given = "Sample"
+* gender = #male
+* birthDate = 1970-11-27
+ 
 Instance: RWDEncounter
 InstanceOf: EncounterRwd
 Description: "A visit where the Real World Data patient was diagnosed and given medications."
