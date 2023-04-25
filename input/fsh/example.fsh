@@ -94,7 +94,7 @@ Description: "A sample procedure for the real world data patient."
 * outcome = http://snomed.info/sct#385669000 "Successful"
 
 Instance: RWDLabResult
-InstanceOf: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation
+InstanceOf: ObservationLaboratoryResultsRwd
 Description: "A sample lab results for the real world data patient."
 * status = #final
 * code = http://loinc.org#26515-7
