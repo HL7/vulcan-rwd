@@ -12,11 +12,15 @@ To receive medication summary information, a requesting system will have to quer
 |MedicationStatement|[base]/MedicationStatement/patient=Patient/[patient id]&effective=ge[history date]|
 {: .grid }
 
+The [IPA MedicationRequest](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest.html) and [IPA MedicationStatement](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement.html) profiles along with the [IPA Medication](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication.html) profile provide the necessary information that are important to RWD.  This guide defines a profile on [MedicationDispense](StructureDefinition-MedicationDispenseRWD.html) and [MedicationAdministration](StructureDefinition-MedicationAdministrationRWD.html) because those resources are important to get a complete picture of the medications that a patient is taking.  See the [Medications](medications.html) section of this guide for more information on determining a patient's medications.
+
 #### Problem List
 
 To receive the problem list, the following query for conditions should be made:
 
 [base]/Condition?patient=Patient/[patient id]&recorded-date=ge[history date]
+
+The [IPA Condition](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition.html) and [IPA Problem List Item](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item.html) profiles provide the necessary information for RWD.
 
 #### History of Procedures
 
@@ -24,18 +28,20 @@ To receive procedures for a patient, the following query for procedures should b
 
 [base]/Procedure?patient=Patient/[patient id]&date=ge[history date]
 
+This guide defines a [Procedure](StructureDefinition-ProcedureRWD.html) profile since the IPA guide does not.
+
 #### Diagnostic Results
 
 To receive observation results for a patient, the following query for observations should be made:
 
 [base]/Observation?patient=Patient/[patient id]&date=ge[history date]
 
-### Real World Data Profiles
-The profiles that have been defined for this implementation guide are listed [here](artifacts.html).  Here is the list of required sections and the profiles that have been defined for that section:
+The [IPA Observation](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation.html) profile provides the necessary information for RWD.
 
-* Medication Summary - [MedicationStatement](StructureDefinition-MedicationStatementRwd.html), [MedicationRequest](StructureDefinition-MedicationRequestRwd.html), [MedicationDispense](StructureDefinition-MedicationDispenseRwd.html), [MedicationAdminstration](StructureDefinition-MedicationAdministrationRwd.html)
-* Problem List - [Condition](StructureDefinition-ConditionRwd.html)
-* History of Procedures - [Procedure](StructureDefinition-ProcedureRwd.html)
-* Diagnostic Results - [Laboratory Results](StructureDefinition-ObservationLaboratoryResultsRwd.html)
+#### Patient Visits
 
-For all other sections, the IPA profiles were deemed sufficient.
+To receive patient visits for a patient, the following query for encounters should be made:
+
+[base]/Encounter?patient=Patient/[patient id]&date=ge[history date]
+
+This guide defines an [Encounter](StructureDefinition-EncounterRWD.html) profile since the IPA guide does not.

@@ -21,7 +21,7 @@ publisher:
   # email: test@example.org
 
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.uv.ipa: 1.0.0
 
 pages:
   index.md:
