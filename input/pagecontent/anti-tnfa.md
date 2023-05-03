@@ -17,8 +17,8 @@ The patients for this study would have the following criteria:
 These criteria would be represented by the following queries:
 
     /Patient?birthdate=le<birthdate of 18 years before today>&gender=male,female
-    /Condition?code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleCrohnsDisease
-    /MedicationAdministration?status=completed&code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleAntiTNFADrugs
+    /Condition?code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleCrohnsDiseaseConditionCodes
+    /MedicationAdministration?status=completed&code:in=http://hl7.org/fhir/uv/vulcan-rwd/ValueSet/ExampleAntiTNFADrugCodes
     /Observation?status=final&code=http://loinc.org|<code for HBI>&value-quantity=ge5
 
 The patients would also not have the following criteria:

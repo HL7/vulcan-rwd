@@ -30,8 +30,6 @@ pages:
     title: Cohort Building
   healthdata.md:
     title: Finding Data
-  usecases.md:
-    title: Use Cases
   technical.md:
     title: Technical Considerations
   medications.md:
@@ -46,6 +44,10 @@ pages:
     title: Acute Coronary Syndrome Study
   anti-tnfa.md:
     title: Anti-TNFa Treatment Study
+  diabetes.md:
+    title: Diabetes Study
+  covid.md:
+    title: COVID-19 Vaccine Effectiveness Study
 
 menu:
   TOC: toc.html
@@ -55,7 +57,8 @@ menu:
   Use Cases:
     Acute Coronary Syndrome: acs.html
     Anti-TNFa Treatment: anti-tnfa.html
-    Others: usecases.html
+    Diabetes: diabetes.html
+    Covid: covid.html
   Considerations: 
     Technical: technical.html
     Medications: medications.html

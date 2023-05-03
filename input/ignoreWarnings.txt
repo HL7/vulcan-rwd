@@ -1,13 +1,25 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-
 # MedicationDispense in FHIR Core has a mapping that includes text that looks like HTML
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
-# The IPS binding to SNOMED is a preferred binding and our examples use RxNorm and NDC.
-None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#1116632)
-None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#613391)
-None of the codings provided are in the value set 'Medications - SNOMED CT + Absent/Unknown (IPS)' (http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0), and a coding is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#32968)
+# Extra slices that are valid since this is an open slice
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/vulcan-rwd/StructureDefinition/MedicationAdministrationRwd|1.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/vulcan-rwd/StructureDefinition/MedicationDispenseRwd|1.0.0
+
+# Created a fake code system URI for EMEA product codes
+The CodeSystem http://example.org/emeaproducts is unknown; The provided code http://example.org/emeaproducts#EMEA/H/C/004647 is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+The code EMEA/H/C/004647 is not valid in the system http://example.org/emeaproducts
+The code EMEA/H/C/004320 is not valid in the system http://example.org/emeaproducts
+Error from server: Unable to provide support for code system http://example.org/emeaproducts
+
+# These are valid CVX codes - checked with latest CDC listing
+The code 221 is not valid in the system http://hl7.org/fhir/sid/cvx
+The code 228 is not valid in the system http://hl7.org/fhir/sid/cvx
+The code 229 is not valid in the system http://hl7.org/fhir/sid/cvx
+The code 230 is not valid in the system http://hl7.org/fhir/sid/cvx
+
+# These are valid ICD-10-CM codes - checked with latest ICD-10-CM listing
+The code J12.82 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code M35.81 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code U09.9 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm

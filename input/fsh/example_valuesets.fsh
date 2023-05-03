@@ -2,6 +2,9 @@ Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $RxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $NDC = http://hl7.org/fhir/sid/ndc
 Alias: $EMEAPRODS = http://example.org/emeaproducts
+Alias: $LOINC = http://loinc.org
+Alias: $SNOMED = http://snomed.info/sct
+Alias: $CVX = http://hl7.org/fhir/sid/cvx
 
 ValueSet: ExampleACSConditionCodes
 Title: "ACS Example Condition Codes"
@@ -878,7 +881,7 @@ Description: "An example value set of codes for Ticagrelor for the Acute Coronar
 * $NDC#551549618
 * $NDC#63629529201
 
-ValueSet: ExampleAntiTNFAConditionCodes
+ValueSet: ExampleCrohnsDiseaseConditionCodes
 Title: "AntiTNFA Example Condition Codes"
 Description: "An example value set of ICD-10 codes for the Anti-TNFA use case for Crohn's Disease."
 * ^experimental = true
@@ -925,3 +928,359 @@ Description: "An example value set of EMEA product codes for Hyrimoz and Zessly 
 * ^experimental = true
 * $EMEAPRODS#EMEA/H/C/004647
 * $EMEAPRODS#EMEA/H/C/004320
+
+
+ValueSet: ExampleDiabetesConditionCodes
+Title: "Diabetes Example Condition Codes"
+Description: "An example value set of ICD-10 codes for type 1 or Type 2 Diabetes."
+* ^experimental = true
+* $ICD10CM#E10.10
+* $ICD10CM#E10.11
+* $ICD10CM#E10.21
+* $ICD10CM#E10.22
+* $ICD10CM#E10.29
+* $ICD10CM#E10.311
+* $ICD10CM#E10.319
+* $ICD10CM#E10.321
+* $ICD10CM#E10.3211
+* $ICD10CM#E10.3212
+* $ICD10CM#E10.3213
+* $ICD10CM#E10.3219
+* $ICD10CM#E10.329
+* $ICD10CM#E10.3291
+* $ICD10CM#E10.3292
+* $ICD10CM#E10.3293
+* $ICD10CM#E10.3299
+* $ICD10CM#E10.331
+* $ICD10CM#E10.3311
+* $ICD10CM#E10.3312
+* $ICD10CM#E10.3313
+* $ICD10CM#E10.3319
+* $ICD10CM#E10.339
+* $ICD10CM#E10.3391
+* $ICD10CM#E10.3392
+* $ICD10CM#E10.3393
+* $ICD10CM#E10.3399
+* $ICD10CM#E10.341
+* $ICD10CM#E10.3411
+* $ICD10CM#E10.3412
+* $ICD10CM#E10.3413
+* $ICD10CM#E10.3419
+* $ICD10CM#E10.349
+* $ICD10CM#E10.3491
+* $ICD10CM#E10.3492
+* $ICD10CM#E10.3493
+* $ICD10CM#E10.3499
+* $ICD10CM#E10.351
+* $ICD10CM#E10.3511
+* $ICD10CM#E10.3512
+* $ICD10CM#E10.3513
+* $ICD10CM#E10.3519
+* $ICD10CM#E10.3521
+* $ICD10CM#E10.3522
+* $ICD10CM#E10.3523
+* $ICD10CM#E10.3529
+* $ICD10CM#E10.3531
+* $ICD10CM#E10.3532
+* $ICD10CM#E10.3533
+* $ICD10CM#E10.3539
+* $ICD10CM#E10.3541
+* $ICD10CM#E10.3542
+* $ICD10CM#E10.3543
+* $ICD10CM#E10.3549
+* $ICD10CM#E10.3551
+* $ICD10CM#E10.3552
+* $ICD10CM#E10.3553
+* $ICD10CM#E10.3559
+* $ICD10CM#E10.359
+* $ICD10CM#E10.3591
+* $ICD10CM#E10.3592
+* $ICD10CM#E10.3593
+* $ICD10CM#E10.3599
+* $ICD10CM#E10.36
+* $ICD10CM#E10.37X1
+* $ICD10CM#E10.37X2
+* $ICD10CM#E10.37X3
+* $ICD10CM#E10.37X9
+* $ICD10CM#E10.39
+* $ICD10CM#E10.40
+* $ICD10CM#E10.41
+* $ICD10CM#E10.42
+* $ICD10CM#E10.43
+* $ICD10CM#E10.44
+* $ICD10CM#E10.49
+* $ICD10CM#E10.51
+* $ICD10CM#E10.52
+* $ICD10CM#E10.59
+* $ICD10CM#E10.610
+* $ICD10CM#E10.618
+* $ICD10CM#E10.620
+* $ICD10CM#E10.621
+* $ICD10CM#E10.622
+* $ICD10CM#E10.628
+* $ICD10CM#E10.630
+* $ICD10CM#E10.638
+* $ICD10CM#E10.641
+* $ICD10CM#E10.649
+* $ICD10CM#E10.65
+* $ICD10CM#E10.69
+* $ICD10CM#E10.8
+* $ICD10CM#E10.9
+* $ICD10CM#E11.00
+* $ICD10CM#E11.01
+* $ICD10CM#E11.10
+* $ICD10CM#E11.11
+* $ICD10CM#E11.21
+* $ICD10CM#E11.22
+* $ICD10CM#E11.29
+* $ICD10CM#E11.311
+* $ICD10CM#E11.319
+* $ICD10CM#E11.321
+* $ICD10CM#E11.3211
+* $ICD10CM#E11.3212
+* $ICD10CM#E11.3213
+* $ICD10CM#E11.3219
+* $ICD10CM#E11.329
+* $ICD10CM#E11.3291
+* $ICD10CM#E11.3292
+* $ICD10CM#E11.3293
+* $ICD10CM#E11.3299
+* $ICD10CM#E11.331
+* $ICD10CM#E11.3311
+* $ICD10CM#E11.3312
+* $ICD10CM#E11.3313
+* $ICD10CM#E11.3319
+* $ICD10CM#E11.339
+* $ICD10CM#E11.3391
+* $ICD10CM#E11.3392
+* $ICD10CM#E11.3393
+* $ICD10CM#E11.3399
+* $ICD10CM#E11.341
+* $ICD10CM#E11.3411
+* $ICD10CM#E11.3412
+* $ICD10CM#E11.3413
+* $ICD10CM#E11.3419
+* $ICD10CM#E11.349
+* $ICD10CM#E11.3491
+* $ICD10CM#E11.3492
+* $ICD10CM#E11.3493
+* $ICD10CM#E11.3499
+* $ICD10CM#E11.351
+* $ICD10CM#E11.3511
+* $ICD10CM#E11.3512
+* $ICD10CM#E11.3513
+* $ICD10CM#E11.3519
+* $ICD10CM#E11.3521
+* $ICD10CM#E11.3522
+* $ICD10CM#E11.3523
+* $ICD10CM#E11.3529
+* $ICD10CM#E11.3531
+* $ICD10CM#E11.3532
+* $ICD10CM#E11.3533
+* $ICD10CM#E11.3539
+* $ICD10CM#E11.3541
+* $ICD10CM#E11.3542
+* $ICD10CM#E11.3543
+* $ICD10CM#E11.3549
+* $ICD10CM#E11.3551
+* $ICD10CM#E11.3552
+* $ICD10CM#E11.3553
+* $ICD10CM#E11.3559
+* $ICD10CM#E11.359
+* $ICD10CM#E11.3591
+* $ICD10CM#E11.3592
+* $ICD10CM#E11.3593
+* $ICD10CM#E11.3599
+* $ICD10CM#E11.36
+* $ICD10CM#E11.37X1
+* $ICD10CM#E11.37X2
+* $ICD10CM#E11.37X3
+* $ICD10CM#E11.37X9
+* $ICD10CM#E11.39
+* $ICD10CM#E11.40
+* $ICD10CM#E11.41
+* $ICD10CM#E11.42
+* $ICD10CM#E11.43
+* $ICD10CM#E11.44
+* $ICD10CM#E11.49
+* $ICD10CM#E11.51
+* $ICD10CM#E11.52
+* $ICD10CM#E11.59
+* $ICD10CM#E11.610
+* $ICD10CM#E11.618
+* $ICD10CM#E11.620
+* $ICD10CM#E11.621
+* $ICD10CM#E11.622
+* $ICD10CM#E11.628
+* $ICD10CM#E11.630
+* $ICD10CM#E11.638
+* $ICD10CM#E11.641
+* $ICD10CM#E11.649
+* $ICD10CM#E11.65
+* $ICD10CM#E11.69
+* $ICD10CM#E11.8
+* $ICD10CM#E11.9
+
+ValueSet: ExampleHbA1cTestCodes
+Title: "Diabetes Example Test Codes"
+Description: "An example value set of LOINC codes for HbA1c tests."
+* ^experimental = true
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* $LOINC#41995-2
+* $LOINC#4548-4
+* $LOINC#71875-9
+* $LOINC#17855-8
+* $LOINC#96595-4
+* $LOINC#4549-2
+* $LOINC#17856-6
+* $LOINC#59261-8
+* $LOINC#62388-4
+
+ValueSet: ExampleDialysisProcedureCodes
+Title: "Diabetes Example Dialysis Test Codes"
+Description: "An example value set of SNOMED codes representing dialysis procedures."
+* ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* codes from system $SNOMED where concept is-a #108241001
+
+ValueSet: ExampleCOVID19TestCodes
+Title: "Covid-19 Example Test Codes"
+Description: "An example value set of LOINC codes representing COVID-19 tests."
+* ^experimental = true
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* $LOINC#95209-3
+* $LOINC#94763-0
+* $LOINC#94762-2
+* $LOINC#94558-4
+* $LOINC#94562-6
+* $LOINC#94768-9
+* $LOINC#95125-1
+* $LOINC#94761-4
+* $LOINC#94563-4
+* $LOINC#94507-1
+* $LOINC#94547-7
+* $LOINC#95416-4
+* $LOINC#94564-2
+* $LOINC#94508-9
+* $LOINC#94760-6
+* $LOINC#95409-9
+* $LOINC#94533-7
+* $LOINC#94756-4
+* $LOINC#94757-2
+* $LOINC#94766-3
+* $LOINC#94316-7
+* $LOINC#94307-6
+* $LOINC#94308-4
+* $LOINC#95411-5
+* $LOINC#94559-2
+* $LOINC#94639-2
+* $LOINC#94534-5
+* $LOINC#94314-2
+* $LOINC#94565-9
+* $LOINC#94759-8
+* $LOINC#95406-5
+* $LOINC#94500-6
+* $LOINC#94845-5
+* $LOINC#94822-4
+* $LOINC#94660-8
+* $LOINC#94309-2
+* $LOINC#94640-0
+* $LOINC#94767-1
+* $LOINC#94641-8
+* $LOINC#95825-6
+* $LOINC#95542-7
+* $LOINC#96119-3
+* $LOINC#95425-5
+* $LOINC#96448-6
+* $LOINC#95824-9
+* $LOINC#96120-1
+* $LOINC#96091-4
+* $LOINC#96123-5
+* $LOINC#95608-6
+* $LOINC#95424-8
+* $LOINC#95609-4
+* $LOINC#96603-6
+* $LOINC#95970-0
+* $LOINC#95971-8
+* $LOINC#96121-9
+* $LOINC#95823-1
+* $LOINC#96122-7
+* $LOINC#97097-0
+* $LOINC#96763-8
+* $LOINC#96957-6
+* $LOINC#96986-5
+* $LOINC#96958-4
+* $LOINC#97098-8
+* $LOINC#96797-6
+* $LOINC#96829-7
+* $LOINC#96765-3
+* $LOINC#96752-1
+* $LOINC#98069-8
+* $LOINC#98132-4
+* $LOINC#98494-8
+* $LOINC#98131-6
+* $LOINC#98493-0
+* $LOINC#99596-9
+* $LOINC#99597-7
+* $LOINC#99772-6
+
+ValueSet: ExampleRespiratoryConditionCodes
+Title: "Covid-19 Example Condition Codes"
+Description: "An example value set of LOINC and SNOMED codes representing some sort of respiratory infection."
+* ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $ICD10CM#B97.21
+* $ICD10CM#B97.29
+* $ICD10CM#U07.1
+* $ICD10CM#J12.82
+* $ICD10CM#M35.81
+* $ICD10CM#U09.9
+* $ICD10CM#Z11.59
+* $ICD10CM#Z20.828
+* $ICD10CM#B34.2
+* $ICD10CM#J06.9
+* $ICD10CM#J98.8
+* $ICD10CM#R43.0
+* $ICD10CM#R43.2
+* $ICD10CM#R07.1
+* $ICD10CM#R68.83
+* $SNOMED#840539006
+* $SNOMED#840544004
+* $SNOMED#840546002
+* $SNOMED#103001002
+* $SNOMED#11833005
+* $SNOMED#267036007
+* $SNOMED#28743005
+* $SNOMED#36955009
+* $SNOMED#426000000
+* $SNOMED#44169009
+* $SNOMED#49727002
+* $SNOMED#135883003
+* $SNOMED#161855003
+* $SNOMED#161939006
+* $SNOMED#161940008
+* $SNOMED#161941007
+* $SNOMED#2237002
+* $SNOMED#23141003
+* $SNOMED#247410004
+* $SNOMED#274640006
+* $SNOMED#274664007
+* $SNOMED#284523002
+* $SNOMED#386661006
+* $SNOMED#409702008
+* $SNOMED#426976009
+* $SNOMED#43724002
+* $SNOMED#60845006
+* $SNOMED#75483001
+
+ValueSet: ExampleNonBNT162b2Codes
+Title: "Covid-19 Example Vaccine Codes"
+Description: "An example value set of vaccine codes representing non-BNT162b2 vaccines."
+* ^experimental = true
+* $CVX#212
+* $CVX#207
+* $CVX#221
+* $CVX#228
+* $CVX#229
+* $CVX#230
+* $CVX#211
